@@ -67,7 +67,7 @@ rosrun rosserial_arduino make_libraries.py [Arduino library paths]
     ```
 ### Transfer Python script to EV3
 If you do not see `run` in Visual Studio Code, it is possible to run the Python script by transferring it as follows (because EV3 does not support `UTF-8`).
-#### 手順：
+#### Process：
 - Connect PC and EV3
 - Remote access to EV3 via ssh (PC side)
     ``` Bash
