@@ -105,20 +105,13 @@ If you do not see `run` in Visual Studio Code, it is possible to run the Python 
     ```
 - Terminal3
     ```Bash
-    rosrun rosserial_python serial_node.py /dev/ttyACM0 _baud:=57600
+    cd ~/catkin_ws
+    source devel/setup.bash
+    roslaunch lego_food_tester_pkg bringup.launch
     ```
 - Terminal4
     ```Bash
     cd ~/catkin_ws
     source devel/setup.bash
-    rosrun lego_food_tester_pkg mqtt_pub_client_node.py
+    roslaunch lego_food_tester_pkg control.launch
     ```
-- Terminal5
-    ```Bash
-    cd ~/catkin_ws
-    source devel/setup.bash
-    rosrun lego_food_tester_pkg gui_node.py
-    ```
-
-
-
