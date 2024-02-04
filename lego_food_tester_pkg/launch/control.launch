@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <node pkg="lego_food_tester_pkg" type="gui_node.py" name="gui_node" output="screen"/>
+    <node pkg="lego_food_tester_pkg" type="mqtt_pub_client_node.py" name="mqtt_pub_client_node" output="screen"/>
+</launch>

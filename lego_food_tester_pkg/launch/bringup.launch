@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- # =================Explanation================ -->
+<!-- # Contents: [プロジェクトの説明]               -->
+<!-- #                                              -->
+<!-- #                                              -->
+<!-- # Author:  Tomoaki Fujino                      -->
+<!-- # LastUpdate: [更新日2022/06/22]               -->
+<!-- # ============================================ -->
+<launch>
+    <node pkg="rosserial_python" type="serial_node.py" name="arduino_core" output="screen">
+        <param name="port" value="/dev/ttyACM0"/>
+        <param name="baud" value="57600"/>
+    </node>
+    <node pkg="lego_food_tester_pkg" type="loadcell_to_gram_node.py" name="loadcell_to_gram_node" output="screen">
+        <param name="port" value="/dev/ttyACM0"/>
+        <param name="baud" value="57600"/>
+    </node>
+</launch>
